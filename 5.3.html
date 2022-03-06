@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>5</title>
+</head>
+<body>
+enter string:<input type="text"  id="str">
+<br>
+enter number:<input type="text" id="t1">
+<br>
+enter power:<input type="text" id="t2">
+<br>
+<button onclick="add()">getresult</button><br><br>
+<label>length of string:</label>
+<input type="text" id="strlen">
+<label>power</label>
+<input type="text" id="powe">
+<label>square rooot</label>
+<input type="text" id="sq">
+<label>slice</label>
+<input type="text" id="slic">
+<label>ceil</label>
+<input type="text" id="ce">
+<label>floor</label>
+<input type="text" id="fl">
+<script type="text/javascript">
+function add()
+{
+var s,sl,a,b,c,d,sli,e,f;
+s=document.getElementById("str").value;
+sl=s.length;
+sli=s.slice(2,8);
+a=document.getElementById("t1").value;
+b=document.getElementById("t2").value;
+c=Math.pow(a,b);
+d=Math.sqrt(a);
+e=Math.ceil(a);
+f=Math.floor(a);
+(document.getElementById("strlen").value)=sl;
+(document.getElementById("powe").value)=c;
+(document.getElementById("sq").value)=d;
+(document.getElementById("slic").value)=sli;
+(document.getElementById("ce").value)=e;
+(document.getElementById("fl").value)=f;
+}
+</script>
+</body>
+</html>
+ 

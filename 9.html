@@ -1,0 +1,25 @@
+<html>
+<body>
+<div class="a" id="a">
+<img src="download.jpg" id="img">
+<h1 id="text1">hello</h1>
+<h1 id="text2">world</h1>
+</div>
+<script>
+document.getElementById("a").addEventListener("mouse over",ab);
+document.getElementById("a").addEventListener("mouse out",bc);
+function ab()
+{
+document.getElementById('img').src="download.jpg";
+document.getElementById('text1').style.display=none;
+document.getElementById('text2').style.display=block;
+}
+function bc()
+{
+document.getElementById('img').src="1.jpeg";
+document.getElementById('text1').style.display=block;
+document.getElementById('text2').style.display=none;
+}
+</script>
+</body>
+</html>

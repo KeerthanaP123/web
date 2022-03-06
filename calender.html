@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>calender</title>
+</head>
+<body>
+enter year:<input type="text" id="year">
+enter month:<input type="text" id="month">
+<button onclick="generate()">generate calender</button>
+<div id="content"></div>
+</body>
+<script type="text/javscript">
+function generate()
+{
+var content="<table border=10 id='calender'><tr><th>sun</th><th>mon</th><th>tue</th><th>wed</th><th>thu</th><th>fri</th><th>sat</th></tr><tr>"
+var year=document.getElementById("year").value;
+var month=document.getElementById("month").value;
+month -=1;
+var date=new  Date(year,month);
+var day=date.getDay();
+if(var i = 0;i< day;i++)
+{
+content +="<td></td>";
+}
+while(date.getMonth() ==month)
+{
+content += "<td>" + date.getDate() +  "</td>";
+if(date.getDay()==6)
+{
+content +="<tr></tr>";
+}
+date.setDate(date.getDate() + 1)
+}
+document.getElementById("content").innerHTML=content;
+content +="</table>";
+}
+</script>
+</html>

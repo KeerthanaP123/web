@@ -1,0 +1,25 @@
+<html>
+<body>
+<label>enter string</label>
+<input type="text" name="textbox1" id="str">
+<script type="tex/javascript">
+function add()
+{
+var sl,sli;
+a=(document.getElementById("str").value);
+sl=a.length;
+sli=a.slice(5,11);
+(document.getElementById("len").value)=sl;
+(document.getElementById("slic").value)=sli;
+}
+</script>
+<br>
+<br>
+
+<button onclick="add()">get result</button>
+<br>
+<br>
+<label>length of string</label><input type="text" id="len">
+<label>slice of string</label><input type="text" id="slic">
+</body>
+</html>
